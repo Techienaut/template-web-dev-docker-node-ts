@@ -1,0 +1,14 @@
+{
+    "$schema": "https://swc.rs/schema.json",
+    "env": {
+        "target": {
+            "node": 20
+        }
+    },
+    "jsc": {
+        "parser": {
+            "syntax": "typescript"
+        }
+    },
+    "sourceMaps": "inline" 
+}

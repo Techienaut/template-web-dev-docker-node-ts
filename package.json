@@ -1,0 +1,27 @@
+{
+  "name": "template-web-dev-docker-node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf dist && swc ./src -d dist && cpx 'dist/src/**/*' dist && rimraf dist/src",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "volta": {
+    "node": "20.14.0"
+  },
+  "dependencies": {
+    "typescript": "^5.5.2"
+  },
+  "devDependencies": {
+    "@swc/cli": "^0.3.12",
+    "@swc/core": "^1.6.3",
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.14.6",
+    "cpx2": "^7.0.1",
+    "rimraf": "^5.0.7"
+  }
+}
